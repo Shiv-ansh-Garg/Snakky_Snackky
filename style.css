@@ -1,0 +1,65 @@
+@import url('https://fonts.googleapis.com/css2?family=Courgette&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    width: 100vw;
+    background-image: url('https://e0.pxfuel.com/wallpapers/714/1024/desktop-wallpaper-spider-man-into-the-spiderverse-spiderman-spider-verse.jpg');
+    background-repeat: repeat;
+}
+
+#scoreBox{
+    font-weight: bold;
+    position: absolute;
+    top:20px;
+    right:60%;
+    color: red;
+    font-size: 30px;
+    font-family: 'Courgette', cursive;;
+    text-decoration: underline;
+}
+
+#hi{
+    font-weight: bold;
+    position: absolute;
+    top:20px;
+    right:38%;
+    color: red;
+    font-size: 30px;
+    font-family: 'Courgette', cursive;;
+    text-decoration: underline;
+}
+
+#board {
+    border:2px solid blue;
+    background-image: linear-gradient(to bottom, #001F3F, #000000);
+    height: 80vh;
+    width: 60vw;
+    display: grid;
+    grid-template-columns: repeat(40, 1fr);
+    grid-template-rows: repeat(40, 1fr);
+}
+
+.head{
+    background-color: rgb(23, 176, 236);
+    /* border-radius:5px; */
+
+}
+
+.snake{
+    background-color: rgb(255, 255, 0);
+    border-radius:10px;
+}
+
+.food{
+    background-color: rgb(224, 79, 217);
+    border-radius: 20%;
+}
